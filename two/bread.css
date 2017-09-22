@@ -1,25 +1,57 @@
 
 h1 {
-    color: #4b4848;
-    font-family: "helvetica", arial;
+    color: white;
+    font-family: "helvetica";
     letter-spacing: 1px;
-    font-size: 50px; 
+    padding: 25px;
+    font-size: 40px;
     text-align: center;
+    background-color: #F1D99B;
 }
 
 h2{
-    font-size: 20px;
+    font-size: 14px;
 }
 
 h3{
-    font-size: 15px;
+    font-size: 13px;
 }
+
 body {
     color: dimgrey;
     font-family: "helvetica", arial;
-    margin: 50px 50px 50px 50px;    
+    margin: 3%;
+    max-width: 100vh;
+}
+
+html {
+  max-width: 100%;
 }
 
 li{
-  margin: 10px 0;
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.descriptions{
+  width: 26%;
+  font-size: 12px;
+  display: inline-block;
+  vertical-align:top;
+}
+
+.ingredients{
+  width: 25%;
+  font-size: 12px;
+  border: 1.5px solid grey;
+  padding: 20px;
+  display: inline-block;
+  vertical-align:top;
+}
+
+.preparation{
+  width: 30%;
+  padding: 0px 30px 20px 30px;
+  display: inline-block;
+  vertical-align:top;
 }
