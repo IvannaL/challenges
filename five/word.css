@@ -1,0 +1,73 @@
+/* ========================================
+ * Setup Styles
+ * ======================================== */
+
+body {
+  margin: 0;
+  font-size: 4rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+div {
+  cursor: crosshair;
+  margin: 1rem
+}
+
+
+/* ========================================
+ * Use an animation on hover
+ * ======================================== */
+
+.shake:hover {
+  animation-name: jiggle-it;
+  animation-duration: 60ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes jiggle-it {
+  0% {
+    transform: translateX(10px)
+  }
+  100% {
+    transform: translateX(-10px)
+  }
+}
+
+
+
+/* Real glitch effect */
+.glitch {
+  position: relative;
+}
+
+.glitch:hover {
+  animation: glitch-animation 2s infinite linear alternate-reverse;
+  background: black;
+  clip: rect( 0, 900px, 0, 0 );
+  color: white;
+  content: attr( data-text );
+  left: 2px;
+  overflow: hidden;
+  position: absolute;
+  text-shadow: -1px 0 red;
+  top: 0;
+}
+.glitch:before {
+  animation: glitch-animation-2 3s infinite linear alternate-reverse;
+  background: black;
+  clip: rect( 0, 900px, 0, 0 );
+  color: white;
+  content: attr( data-text );
+  left: -2px;
+  overflow: hidden;
+  position: absolute;
+  text-shadow: 1px 0 blue;
+  top: 0;
+}

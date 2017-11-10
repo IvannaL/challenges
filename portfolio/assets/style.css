@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+/*@media (min-width:800px){*/
+.logo{
+  width: 1000px;
+  padding-top:100px;
+  padding-left:100px;
+  /*background-color: red;*/
+}
+
+
+/*
+  ========================================
+  Main Page Navigation
+  ========================================
+*/
+
+.about{
+  font-size: 80px;
+  text-decoration: none;
+  font-family:'Barlow', sans-serif;
+  font-weight: 600;
+  color: black;
+  letter-spacing: 10px;
+}
+
+.intro{
+  color: black;
+  font-family:'Barlow', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.blurb{
+  padding-top:150px;
+  padding-left:100px;
+}
+
+.gd{
+  text-decoration: none;
+  color:black;
+}
+
+.gd:hover{
+  color: red;
+}
+
+.ad{
+  text-decoration: none;
+  color:black;
+}
+
+.ad:hover{
+  text-decoration: none;
+  color:purple;
+}
+
+.misc{
+  text-decoration: none;
+  color:black;
+}
+
+.misc:hover{
+  color: blue;
+}
+
+/*.new {*/
+  opacity: 0;
+}
+
+/*.old .new {*/
+    transition: 0.5s linear;
+}
+
+/*.ad:hover .old {*/
+    opacity: 0;
+}
+/*.ad:hover .new {*/
+    opacity: 1;
+    color: pink;
+}
+
+/*.ad:hover {
+  background-color: green;
+  transition: all 500ms ease-in-out;
+}
+
+.ad:hover .com span {
+  display: none;
+}
+
+.ad:hover .com:after {
+  content: "advertising"
+}
+*/
+
+.misc{
+  text-decoration: none;
+  color:black;
+}
+
+.misc:hover{
+  color: red;
+}
+
+.resume{
+  text-decoration: none;
+  color:black;
+}
+
+.resume:hover{
+  color: red;
+}
+
+
+/*
+  ========================================
+  Main Page Navigation
+  ========================================
+*/
+
+body{
+  display: flex;
+  /*flex-direction: row;*/
+}
+
+.sidebar{
+  width: 250px;
+  min-height: 100%;
+  padding-left: 50px;
+  /*background: black;*/
+    }
+
+.landing{
+  width: 100%;
+  min-height: 100%;
+  padding-left: 50px;
+    }
+
+.nav{
+  margin-left: 100px;
+  margin-top: 70px;
+}
+
+.about_2, .gd_2, .ad_2, .misc_2, .resume_2{
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  font-family:'Barlow', sans-serif;
+  /*background-color: blue;*/
+  font-weight: 100;
+  /*margin-top: 10px;*/
+  line-height: 2;
+
+}
+
+.work{
+  margin-top: 225px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+}
+
+h1{
+  font-size: 30px;
+  color: black;
+  font-family:'Barlow', sans-serif;
+  font-weight: 500;
+}
+
+h2{
+  font-size: 18px;
+  color: black;
+  font-family:'Barlow', sans-serif;
+  font-weight: 100;
+  margin-top: 5px;
+
+}
+
+h3{
+  font-size: 15px;
+  line-height: 30px;
+  color: black;
+  font-family:'Barlow', sans-serif;
+  font-weight: 300;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 800px;
+
+}
+
+.intro{
+  margin-bottom: 20px;
+
+}
+
+.square{
+  object-fit: cover;
+  width:420px;
+  height:420px;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   filter: grayscale(100%);
+   filter: gray; /* IE 6-9 */
+}
+
+.square:hover {
+   -webkit-filter: none;
+   -moz-filter: none;
+   -ms-filter: none;
+   filter: none;
+}
+
+
+/*
+  ========================================
+  Work Page
+  ========================================
+*/
+
+.photos{
+  width: 800px;
+}
