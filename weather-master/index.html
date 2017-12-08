@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Set a page title -->
+    <title>Weather</title>
+
+    <!-- Site Styles -->
+    <link rel="stylesheet" href="/css/tachyons.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="sans-serif">
+
+      <!-- If there is an error, this box is shown. 'dn' is the only required class -->
+      <div id="error" class="dn bg-red white pa4 fixed bottom-0 w-100">
+        Sorry, we couldn't find that city.
+      </div>
+
+      <!-- Search Box -->
+      <form id="location-search" class="pa4">
+        <h1 class="flex flex-wrap items-baseline">
+          <span class="mr4 mr3 mb2 weather">
+            Weather for:
+          </span><input type="text" id="area" value="Boston" class="flex-auto">
+        </h1>
+      </form>
+
+      <!-- Content -->
+    <div class="content">
+      <div class="flex flex-wrap pa4 location">
+        <div class="w-100 w-50-m w-third-l location">
+          <h2>Location</h2>
+          <p>City: <h1><span id="location-name"></span></h1></p>
+          <p>Country: <h1><span id="country"></span></h1></p>
+        </div>
+
+        <div class="w-100 w-50-m w-third-l temperature">
+          <h2>Temperature</h2>
+          <p>Current Temp: <br><h1><span id="temp"></span></h1></p>
+          <p>Max Temp: <h1><span id="temp-max"></span></h1></p>
+          <p>Min Temp: <h1><span id="temp-min"></span></h1></p>
+        </div>
+
+        <div class="w-100 w-50-m w-third-l weathers">
+          <h2>Weather</h2>
+          <p>Condition: <h1><span id="condition"></span></h1></p>
+          <p>Desription: <h1><span id="condition-description"></span></h1></p>
+          <p>Wind Speed: <h1><span id="wind-speed"></span>mph</h1></p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <!-- Site JavaScript -->
+    <script src="/javascript/toggleClass.js" charset="utf-8"></script>
+    <script src="/javascript/main.js" charset="utf-8"></script>
+    <script src="/javascript/weather.js" charset="utf-8"></script>
+  </body>
+</html>

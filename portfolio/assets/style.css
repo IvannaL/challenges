@@ -69,12 +69,22 @@ table {
 */
 
 .about{
-  font-size: 80px;
+  font-size: 70px;
   text-decoration: none;
   font-family:'Barlow', sans-serif;
   font-weight: 600;
   color: black;
   letter-spacing: 10px;
+}
+
+.about:hover {
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, #ffcc66, #ff6666, #1ac6ff);
+  background-size: auto 250%;
+  background-position: 0 100%;
+  transition: background-position 0.5s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .intro{
@@ -90,80 +100,24 @@ table {
   padding-left:100px;
 }
 
-.gd{
-  text-decoration: none;
-  color:black;
-}
-
-.gd:hover{
-  color: red;
-}
-
-.ad{
+.ad, .gd, .misc{
   text-decoration: none;
   color:black;
 }
 
 .ad:hover{
   text-decoration: none;
-  color:purple;
+  color:#1ac6ff;
 }
 
-.misc{
-  text-decoration: none;
-  color:black;
-}
-
-.misc:hover{
-  color: blue;
-}
-
-/*.new {*/
-  opacity: 0;
-}
-
-/*.old .new {*/
-    transition: 0.5s linear;
-}
-
-/*.ad:hover .old {*/
-    opacity: 0;
-}
-/*.ad:hover .new {*/
-    opacity: 1;
-    color: pink;
-}
-
-/*.ad:hover {
-  background-color: green;
-  transition: all 500ms ease-in-out;
-}
-
-.ad:hover .com span {
-  display: none;
-}
-
-.ad:hover .com:after {
-  content: "advertising"
-}
-*/
-
-.misc{
-  text-decoration: none;
-  color:black;
+.gd:hover{
+  font-weight: 300;
+  color:#ff6666;
 }
 
 .misc:hover{
-  color: red;
-}
-
-.resume{
   text-decoration: none;
-  color:black;
-}
-
-.resume:hover{
-  color: red;
+  color: #ffcc66;
 }
 
 
@@ -272,6 +226,8 @@ h3{
   Work Page
   ========================================
 */
+
+
 
 .photos{
   width: 800px;

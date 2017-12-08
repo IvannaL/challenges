@@ -1,0 +1,64 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background-color: #cccc;
+}
+
+h1{
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: white;
+  text-shadow: -1px -1px 0px #2196f3, 3px 3px 0px #2196f3, 6px 6px 0px #0d47a1;
+}
+
+h2 {
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: white;
+
+}
+
+.temperature{
+  text-align: center;
+}
+
+.weather {
+  text-align: center;
+}
+
+.location{
+  text-align: center;
+}
+
+.content{
+  align-items: center;
+}
+
+ .hot{
+  /*background-color: red;*/
+  background-image: url("/hot.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #E44136;
+
+ }
+
+ .warm{
+   /*background-color: yellow;*/
+   background-image: url("/warm.png");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-color: #F6B713;
+ }
+
+ .cold{
+   background-color: #1DA5AE;
+   background-image: url("/cold.png");
+   background-size: 100%;
+   background-repeat: no-repeat;
+ }
